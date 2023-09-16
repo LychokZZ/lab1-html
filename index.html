@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переваги та недоліки ІТ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-button {
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: block;
+            border-radius: 4px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .advantages, .disadvantages {
+            margin-top: 20px;
+            display: none;
+        }
+        .advantages.active, .disadvantages.active {
+            display: block;
+        }
+        h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Переваги та недоліки ІТ</h1>
+        
+        <button class="nav-button" onclick="showAdvantages()">Переваги ІТ</button>
+        <button class="nav-button" onclick="showDisadvantages()">Недоліки ІТ</button>
+        
+        <section class="advantages" id="advantages-section">
+            <h2>Переваги ІТ:</h2>
+            <ul>
+                            <li>Швидкість та ефективність: IT дозволяють обробляти, зберігати, передавати та аналізувати великі обсяги інформації набагато швидше, ніж будь-коли раніше.</li>
+                            <li>Підвищення продуктивності: Інструменти та програми для автоматизації рутинних завдань допомагають підвищити продуктивність співробітників.</li>
+                            <li>Глобальний доступ: Інтернет та мобільні технології надають можливість отримувати доступ до інформації та ресурсів з будь-якого місця світу.</li>
+                            <li>Інновації: IT сприяють розвитку нових технологій, продуктів та послуг.</li>
+                            <li>Зниження витрат: Впровадження IT може допомогти компаніям знизити витрати на обладнання, робочу силу та інфраструктуру.</li>
+                            <li>Вдосконалення комунікації: ІТ-засоби, такі як електронна пошта, відеоконференції та соціальні мережі, сприяють полегшенню комунікації.</li>
+                            <li>Збереження інформації: ІТ дозволяють зберігати великі обсяги даних в електронному вигляді, що полегшує їх пошук, аналіз та забезпечує надійну архівацію.</li>
+                            <li>Аналітика та прийняття рішень: IT забезпечують інструменти для збору та аналізу даних, що допомагають компаніям приймати більш обґрунтовані рішення.</li>
+                            <li>Забезпечення безпеки: IT також важливі для забезпечення цифрової безпеки та захисту від кіберзагроз.</li>
+                            <li>Нові можливості кар'єри: Сфера IT надає багато можливостей для розвитку кар'єри, включаючи роботу програмістом, аналітиком даних, інженером мереж та інші спеціалізовані професії.</li>
+                        </ul>
+        </section>
+        
+        <section class="disadvantages" id="disadvantages-section">
+            <h2>Недоліки ІТ:</h2>
+            <ul>
+                            <li>Кіберзагрози: З ростом використання IT збільшується загроза кібератак, включаючи віруси, шкідливі програми, фішинг та інші види кіберзлочинності.</li>
+                            <li>Приватність даних: Збільшення обсягів зберігання та обробки особистої інформації може порушувати приватність користувачів, якщо не забезпечувати відповідний рівень захисту даних.</li>
+                            <li>Залежність від технологій: Зростання залежності від IT може призвести до проблем, коли системи виходять з ладу або відмовляють.</li>
+                            <li>Екологічні проблеми: Розширене використання IT призводить до збільшення споживання енергії, електронного сміття та інших екологічних викликів.</li>
+                            <li>Інтернет-залежність: Люди можуть стати залежними від онлайн-сервісів, соціальних мереж та інтернету загалом, що може негативно впливати на психічне та фізичне здоров'я.</li>
+                            <li>Соціальні та етичні проблеми: З ростом використання IT виникають нові етичні питання, такі як використання штучного інтелекту, контроль за інтернет-комунікаціями та інші.</li>
+                            <li>Втрата робочих місць: Автоматизація і роботизація можуть призвести до втрати робочих місць у деяких сферах.</li>
+                            <li>Технологічний розрив: Нерівність у доступі до IT може призводити до технологічного розриву між регіонами та соціальними групами.</li>
+                            <li>Інформаційний шум: Завелика кількість інформації в Інтернеті може призвести до інформаційного перенасичення та зниження якості інформації.</li>
+                            <li>Етичні ділеми: Розробка та використання нових технологій можуть породжувати серйозні моральні питання.</li>
+                        </ul>
+        </section>
+
+        <div class="form-container">
+            <h2>Залиште свій відгук</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name" class="form-label">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Ваша електронна пошта:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="form-label">Ваш коментар:</label>
+                    <textarea id="comment" name="comment" class="form-input" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="form-button">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showAdvantages() {
+            var advantagesSection = document.getElementById("advantages-section");
+            var disadvantagesSection = document.getElementById("disadvantages-section");
+            advantagesSection.classList.add("active");
+            disadvantagesSection.classList.remove("active");
+        }
+
+        function showDisadvantages() {
+            var advantagesSection = document.getElementById("advantages-section");
+            var disadvantagesSection = document.getElementById("disadvantages-section");
+            advantagesSection.classList.remove("active");
+            disadvantagesSection.classList.add("active");
+        }
+    </script>
+</body>
+</html>
